@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JK Sports Namakkal | Pro Store</title>
+
+  <!-- ════ SEO ════ -->
+  <meta name="description" content="JK Sports Namakkal — cricket, badminton, football, gym equipment, custom team jerseys and sports medals across two branches in Namakkal. Trusted by players, coaches and schools since 2021." />
+  <link rel="canonical" href="https://poojasri06.github.io/jk-sports/" />
+
+  <!-- ════ Open Graph / social sharing ════ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="JK Sports Namakkal | Pro Store" />
+  <meta property="og:description" content="Cricket, badminton, football, gym gear, custom jerseys and medals — two branches in Namakkal. Shop sports gear like a pro." />
+  <meta property="og:url" content="https://poojasri06.github.io/jk-sports/" />
+  <meta property="og:image" content="https://poojasri06.github.io/jk-sports/assets/og-image.jpg" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- ════ Twitter card ════ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="JK Sports Namakkal | Pro Store" />
+  <meta name="twitter:description" content="Cricket, badminton, football, gym gear, custom jerseys and medals — two branches in Namakkal." />
+  <meta name="twitter:image" content="https://poojasri06.github.io/jk-sports/assets/og-image.jpg" />
+
+  <!-- ════ Favicons ════ -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;800;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- FIX: this used to point to "jk-sports/assets/front page.jpeg" which is a broken
+       path (extra "jk-sports/" prefix + wrong filename). It now correctly preloads
+       the actual hero image used below. -->
+  <link rel="preload" as="image" href="assets/jk-sports-storefront.jpg" />
+
+  <!-- ════ Structured data: local business ════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportingGoodsStore",
+    "name": "JK Sports Namakkal",
+    "image": "https://poojasri06.github.io/jk-sports/assets/og-image.jpg",
+    "telephone": "+919786722444",
+    "priceRange": "₹₹",
+    "url": "https://poojasri06.github.io/jk-sports/",
+    "areaServed": "Namakkal, Tamil Nadu",
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "name": "Main Branch",
+        "streetAddress": "Periyanna Gounder Plaza",
+        "addressLocality": "Namakkal",
+        "addressRegion": "Tamil Nadu",
+        "addressCountry": "IN"
+      },
+      {
+        "@type": "PostalAddress",
+        "name": "Second Branch",
+        "streetAddress": "Salem Rd, R.P Pudur",
+        "addressLocality": "Namakkal",
+        "addressRegion": "Tamil Nadu",
+        "addressCountry": "IN"
+      }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/jk_sports_nkl",
+      "https://youtube.com/@jksportsnamakkal"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "1000"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- ════════════════════════════
+     HEADER / NAVBAR
+════════════════════════════ -->
+<header>
+  <nav>
+    <a href="#" class="nav-logo">
+      <img src="assets/logo.jpeg" alt="JK Sports" class="nav-logo-img" width="40" height="40" decoding="async" />
+      <span class="nav-brand">JK Sports</span>
+    </a>
+
+    <div class="nav-links" id="navLinks" role="navigation" aria-label="Main menu">
+      <a href="#" class="active">Home</a>
+      <a href="#zones">Products</a>
+      <a href="#sports">Sports &amp; Jerseys</a>
+      <a href="#about">About</a>
+      <a href="#store">Find Store</a>
+    </div>
+
+    <div class="nav-actions">
+      <a href="#store" class="btn-nav-primary">Find Store</a>
+    </div>
+  </nav>
+</header>
+
+<!-- ════════════════════════════
+     HERO
+     FIX: hero background is now a pure CSS background-image on .hero-bg
+     (see style.css) instead of an <img> tag. This is more reliable for
+     full-bleed hero sections and was the root cause of the image not
+     showing — the <img> src had failed to resolve. An empty div with
+     role="img" keeps the accessible label.
+════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg" role="img" aria-label="JK Sports Namakkal store interior — trophies, jerseys, and sports gear on display"></div>
+  <div class="hero-container">
+    <div class="hero-text">
+      <div class="hero-badge">🏆 Retail Storefront · Since 2021 · Namakkal</div>
+      <h1 class="hero-h1">Shop Sports Gear<br /><span>Like A Pro.</span></h1>
+      <p class="hero-sub">Category-first browsing, teamwear customization, sports medals, and trusted guidance — built for players in Namakkal.</p>
+      <div class="hero-btns">
+        <a href="#sports" class="btn-explore">Explore Categories →</a>
+        <a href="#store"  class="btn-visit">Visit Store →</a>
+      </div>
+      <div class="hero-cat-strip">
+        <a href="#sports">🏏 Cricket</a>
+        <a href="#sports">🏸 Badminton</a>
+        <a href="#sports">⚽ Football</a>
+        <a href="#zones">💪 Gym</a>
+        <a href="#zones">🥇 Medals</a>
+      </div>
+    </div>
+    <div class="category-card">
+      <span class="card-label">Shop By Category</span>
+      <div class="category-grid">
+        <a href="#sports" class="cat-item">🏏 Cricket</a>
+        <a href="#sports" class="cat-item">🏸 Badminton</a>
+        <a href="#sports" class="cat-item">⚽ Football</a>
+        <a href="#zones"  class="cat-item">💪 Gym</a>
+        <a href="#zones"  class="cat-item">🥇 Medals</a>
+        <a href="#sports" class="cat-item">👕 Teamwear</a>
+      </div>
+      <div class="card-services">
+        <p>In-Store Services<br />Bulk orders, jersey printing, medals &amp; expert guidance.</p>
+        <p style="margin-top:0.65rem;font-size:0.78rem;color:#666;">
+          ✓ Brand-trusted sports equipment<br />
+          ✓ Custom jerseys &amp; medals<br />
+          ✓ Two branches in Namakkal
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="hero-pills">
+    <span class="pill-item">🏆 Match-ready gear</span>
+    <span class="pill-item">🥇 Custom medals</span>
+    <span class="pill-item">👕 Custom teamwear</span>
+    <span class="pill-item">📍 Local branch support</span>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     PRODUCT ZONES
+════════════════════════════ -->
+<section class="dark-bg" id="zones">
+  <div class="container">
+
+    <div class="white-card">
+      <div class="card-header">
+        <h2 class="card-title">Product Zones</h2>
+        <a href="#sports" class="view-all">View all →</a>
+      </div>
+      <div class="zone-grid">
+        <div class="zone-card" onclick="openCatalog('cricket')" role="button" tabindex="0" aria-label="View Cricket products">
+          <h3>Cricket Zone 🏏</h3><p>Bats, balls, pads, gloves, match kits</p>
+        </div>
+        <div class="zone-card" onclick="openCatalog('badminton')" role="button" tabindex="0" aria-label="View Badminton products">
+          <h3>Badminton Zone 🏸</h3><p>Yonex rackets, shuttles, grip kits</p>
+        </div>
+        <div class="zone-card" onclick="document.getElementById('sports').scrollIntoView({behavior:'smooth'})" role="button" tabindex="0" aria-label="View Teamwear">
+          <h3>Teamwear Studio 👕</h3><p>Custom jerseys with sublimation printing</p>
+        </div>
+        <div class="zone-card" onclick="openCatalog('fitness')" role="button" tabindex="0" aria-label="View Fitness and Medals products">
+          <h3>Fitness &amp; Medals 🏆</h3><p>Gym equipment, custom medals &amp; more</p>
+        </div>
+      </div>
+
+      <div class="product-showcase">
+        <div class="product-card" onclick="openCatalog('cricket')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View all Cricket products">
+          <img src="assets/-hn65ksaxy5-250.jpg" alt="Premium Cricket Bat" width="400" height="300" loading="lazy" decoding="async" />
+          <div class="prod-info">
+            <div class="prod-title">Cricket Gear <span class="tag-gold">TOP RATED</span></div>
+            <button class="btn-quick" tabindex="-1">View all Cricket products</button>
+          </div>
+        </div>
+        <div class="product-card" onclick="openCatalog('badminton')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View all Badminton products">
+          <img src="assets/jk-sports-namakkal-namakkal-ho-namakkal-sports-goods-dealers-yonex-04zxd27huf.jpg" alt="Yonex Racket" width="400" height="300" loading="lazy" decoding="async" />
+          <div class="prod-info">
+            <div class="prod-title">Badminton Gear <span class="tag-gold">PRO PICK</span></div>
+            <button class="btn-quick" tabindex="-1">View all Badminton products</button>
+          </div>
+        </div>
+        <div class="product-card" onclick="openCatalog('football')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View all Football products">
+          <img src="assets/jk-sports-namakkal-namakkal-ho-namakkal-sports-goods-dealers-xzgfv5zd2t.jpg" alt="Match Ball" width="400" height="300" loading="lazy" decoding="async" />
+          <div class="prod-info">
+            <div class="prod-title">Football &amp; Ball Sports <span class="tag-gold">VALUE</span></div>
+            <button class="btn-quick" tabindex="-1">View all Football products</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     FEATURED PRODUCTS
+════════════════════════════ -->
+<section class="dark-bg" id="featured" style="padding-top:0;">
+  <div class="container">
+    <div class="white-card">
+      <div class="card-header">
+        <h2 class="card-title">Featured Products</h2>
+        <a href="#store" class="view-all">Enquire in-store →</a>
+      </div>
+      <div class="offer-banner">🔥 Flat 25% OFF — Every Day, All 365 Days!</div>
+
+      <div class="featured-grid">
+        <div class="featured-card" onclick="openCatalog('fitness')" role="button" tabindex="0" aria-label="View all Gym Equipment products">
+          <img src="assets/photo-1534438327276-14e5300c3a48.jpg" alt="Gym Equipment" width="600" height="350" loading="lazy" decoding="async" />
+          <div class="featured-card-body">
+            <span class="feat-badge">✅ Gym Equipment Available</span>
+            <h4>💪 Gym Equipment</h4>
+            <p>Dumbbells, barbells, benches, resistance bands, and full home-gym sets from trusted brands.</p>
+            <button class="btn-feat">View All Products</button>
+          </div>
+        </div>
+
+        <div class="featured-card" onclick="openCatalog('cricket')" role="button" tabindex="0" aria-label="View all Cricket products including turf bats">
+          <img src="assets/photo-1599982917650-21da4d09c437.jpg" alt="Sri Lankan Turf Bat" width="600" height="350" loading="lazy" decoding="async" />
+          <div class="featured-card-body">
+            <span class="feat-badge green">✅ Premium Sri Lankan Turf Bats Available</span>
+            <h4>🏏 Sri Lankan Turf Bats</h4>
+            <p>Authentic Ceylon willow turf bats — premium grade, perfect for hard-ball turf wicket matches.</p>
+            <button class="btn-feat">View All Products</button>
+          </div>
+        </div>
+
+        <div class="featured-card" onclick="openCatalog('medals')" role="button" tabindex="0" aria-label="View all Sports Medals and Trophies products">
+          <img src="assets/photo-1567427017947-545c5f8d16ad.jpg" alt="Sports Medals and Trophies" width="600" height="350" loading="lazy" decoding="async" />
+          <div class="featured-card-body">
+            <span class="feat-badge gold">✅ Custom Medals &amp; Trophies Available</span>
+            <h4>🥇 Medals &amp; Trophies</h4>
+            <p>Medals &amp; trophies for schools, colleges, tournaments &amp; events. Bulk orders — engraving, ribbon &amp; sizing options.</p>
+            <button class="btn-feat">View All Products</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     GEAR RECOMMENDER
+════════════════════════════ -->
+<section class="dark-bg" style="padding-top:0;">
+  <div class="container">
+    <div class="rec-tool">
+      <h3 class="rec-title">🎯 Gear Recommender</h3>
+      <p class="rec-text">Answer two quick questions and we'll recommend the right gear.</p>
+      <div class="rec-grid">
+        <div class="rec-field">
+          <label for="recSport">Sport</label>
+          <select id="recSport">
+            <option value="">Choose sport</option>
+            <option>Cricket</option><option>Badminton</option>
+            <option>Football</option><option>Basketball</option>
+            <option>Tennis</option><option>Gym / Fitness</option>
+          </select>
+        </div>
+        <div class="rec-field">
+          <label for="recStyle">Playing Style</label>
+          <select id="recStyle">
+            <option value="">Choose style</option>
+            <option>Casual</option><option>Competitive</option><option>Professional</option>
+          </select>
+        </div>
+        <div class="rec-field">
+          <label for="recAge">Age</label>
+          <input type="number" id="recAge" placeholder="e.g. 18" min="5" max="80" />
+        </div>
+        <button class="btn-rec" onclick="getRecommendation()">Get Recommendation →</button>
+      </div>
+      <div class="rec-result" id="recResult"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     SPORTS PULSE
+════════════════════════════ -->
+<section class="dark-bg" style="padding-top:0;">
+  <div class="container">
+    <div class="pulse-grid">
+      <div class="pulse-card">
+        <p style="font-size:0.68rem;font-weight:800;letter-spacing:2px;color:#999;text-transform:uppercase;margin-bottom:0.5rem;">Sports Pulse</p>
+        <h3 class="pulse-title">Built for players, coaches, and teams</h3>
+        <p style="color:var(--text-dim);font-size:0.9rem;">Curated categories, custom teamwear, medals, and gym gear — all from two local stores in Namakkal.</p>
+        <div class="pulse-features">
+          <div class="pulse-feat">🏆 Match-ready gear</div>
+          <div class="pulse-feat">🥇 Custom medals</div>
+          <div class="pulse-feat">👕 Custom teamwear</div>
+          <div class="pulse-feat">💡 Expert staff</div>
+        </div>
+      </div>
+      <div class="pulse-card">
+        <p style="font-size:0.68rem;font-weight:800;letter-spacing:2px;color:#999;text-transform:uppercase;margin-bottom:0.5rem;">Why Athletes Choose Us</p>
+        <h3 class="pulse-title">A sharper sports shopping experience</h3>
+        <div class="perk-list">
+          <div class="perk-item">⚡ Two branches — find your nearest easily</div>
+          <div class="perk-item">🛡️ Premium + budget gear from trusted brands</div>
+          <div class="perk-item">🎨 Custom jersey printing for schools &amp; clubs</div>
+          <div class="perk-item">🥇 Bulk medal orders for any event</div>
+        </div>
+      </div>
+    </div>
+    <div class="stats-bar">
+      <div class="stat">⭐ 5.0 Rating</div>
+      <div class="stat">4+ Years</div>
+      <div class="stat">1000+ Customers</div>
+      <div class="stat">15+ Sports</div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     SPORTS WE COVER
+════════════════════════════ -->
+<section class="dark-bg" id="sports" style="padding-top:0;">
+  <div class="container">
+    <h2 class="section-title" style="margin-bottom:2rem;">Sports We Cover</h2>
+    <div class="filter-bar">
+      <input type="text" id="sportSearch" placeholder="Search a sport..." oninput="filterSports()" />
+      <div class="filter-pills">
+        <span class="pill active" onclick="filterByTag('all',this)">All</span>
+        <span class="pill" onclick="filterByTag('cricket',this)">Cricket</span>
+        <span class="pill" onclick="filterByTag('racket',this)">Racket</span>
+        <span class="pill" onclick="filterByTag('ball',this)">Ball Sports</span>
+        <span class="pill" onclick="filterByTag('fitness',this)">Fitness</span>
+        <span class="pill" onclick="filterByTag('indoor',this)">Indoor</span>
+        <span class="pill" onclick="filterByTag('athletics',this)">Athletics</span>
+        <span class="pill" onclick="filterByTag('combat',this)">Combat</span>
+        <span class="pill" onclick="filterByTag('accessories',this)">Accessories</span>
+      </div>
+    </div>
+
+    <h3 class="sports-group-heading">🌤️ Outdoor Games</h3>
+    <div class="sports-grid" id="outdoorGrid">
+      <div class="sport-item" data-tag="cricket" onclick="openCatalog('cricket')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Cricket products">
+        <div class="sport-img-wrap"><img src="assets/yogendra-singh-dE3exzmYlKc-unsplash.jpg" alt="Cricket" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div><span class="sport-tag">Popular</span></div>
+        <div class="sport-name">Cricket</div>
+      </div>
+      <div class="sport-item" data-tag="ball" onclick="openCatalog('football')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Football products">
+        <div class="sport-img-wrap"><img src="assets/emilio-garcia-AWdCgDDedH0-unsplash.jpg" alt="Football" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div></div>
+        <div class="sport-name">Football</div>
+      </div>
+      <div class="sport-item" data-tag="ball" onclick="openCatalog('basketball')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Basketball products">
+        <div class="sport-img-wrap"><img src="assets/markus-spiske-BfphcCvhl6E-unsplash.jpg" alt="Basketball" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div></div>
+        <div class="sport-name">Basketball</div>
+      </div>
+      <div class="sport-item" data-tag="ball" onclick="openCatalog('volleyball')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Volleyball products">
+        <div class="sport-img-wrap"><img src="assets/colton-duke-V5qPDfTTVL8-unsplash.jpg" alt="Volleyball" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div></div>
+        <div class="sport-name">Volleyball</div>
+      </div>
+      <div class="sport-item" data-tag="ball" onclick="openCatalog('kabaddi')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Kabaddi products">
+        <div class="sport-img-wrap"><img src="assets/rajesh-rajput-q5dvDxmE3qQ-unsplash.jpg" alt="Kabaddi" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div><span class="sport-tag">Local Fav</span></div>
+        <div class="sport-name">Kabaddi</div>
+      </div>
+      <div class="sport-item" data-tag="ball" onclick="openCatalog('hockey')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Hockey products">
+        <div class="sport-img-wrap"><img src="assets/gerhard-crous-doivHPaG-Vw-unsplash.jpg" alt="Hockey" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div></div>
+        <div class="sport-name">Hockey</div>
+      </div>
+      <div class="sport-item" data-tag="racket" onclick="openCatalog('badminton')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Badminton products">
+        <div class="sport-img-wrap"><img src="assets/irish83-sxwRpLJTuXc-unsplash (1).jpg" alt="Badminton" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div><span class="sport-tag">Popular</span></div>
+        <div class="sport-name">Badminton</div>
+      </div>
+      <div class="sport-item" data-tag="racket" onclick="openCatalog('tennis')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Tennis products">
+        <div class="sport-img-wrap"><img src="assets/renith-r-A9VpotrPr1k-unsplash.jpg" alt="Tennis" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div></div>
+        <div class="sport-name">Tennis</div>
+      </div>
+      <div class="sport-item" data-tag="combat" onclick="openCatalog('boxing')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Boxing products">
+        <div class="sport-img-wrap"><img src="assets/chris-kendall-sJ6az6-T1u8-unsplash.jpg" alt="Boxing Gloves" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div><span class="sport-tag">Combat</span></div>
+        <div class="sport-name">Boxing</div>
+      </div>
+      <div class="sport-item" data-tag="fitness" onclick="openCatalog('medals')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Medals and Trophies products">
+        <div class="sport-img-wrap"><img src="assets/florian-cordier-E6R0Kn8TKQg-unsplash.jpg" alt="Medals and Trophies" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div></div>
+        <div class="sport-name">Medals &amp; Trophies</div>
+      </div>
+      <div class="sport-item" data-tag="cricket" onclick="openCatalog('turfbats')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Sri Lankan Turf Bats products">
+        <div class="sport-img-wrap"><img src="assets/cabinappz-LvgyjdYF30Y-unsplash.jpg" alt="Sri Lankan Turf Bats" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div></div>
+        <div class="sport-name">SL Turf Bats</div>
+      </div>
+      <div class="sport-item" data-tag="fitness" onclick="openCatalog('fitness')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Fitness and Gym products">
+        <div class="sport-img-wrap"><img src="assets/gabin-vallet-J154nEkpzlQ-unsplash.jpg" alt="Fitness" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div></div>
+        <div class="sport-name">Fitness &amp; Gym</div>
+      </div>
+      <div class="sport-item" data-tag="athletics" onclick="openCatalog('athletics')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Athletics products">
+        <div class="sport-img-wrap"><img src="assets/sopan-shewale-tFvMzcr4pII-unsplash.jpg" alt="Athletics Running Track" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div></div>
+        <div class="sport-name">Athletics</div>
+      </div>
+      <div class="sport-item" data-tag="fitness" onclick="openCatalog('yoga')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Yoga and Wellness products">
+        <div class="sport-img-wrap"><img src="assets/dylan-gillis-YJdCZba0TYE-unsplash.jpg" alt="Yoga" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div></div>
+        <div class="sport-name">Yoga &amp; Wellness</div>
+      </div>
+      <div class="sport-item" data-tag="fitness" onclick="openCatalog('swimming')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Swimming products">
+        <div class="sport-img-wrap"><img src="assets/todd-quackenbush-E9PJO_vL3E8-unsplash.jpg" alt="Swimming" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div></div>
+        <div class="sport-name">Swimming</div>
+      </div>
+      <div class="sport-item" data-tag="fitness" onclick="openCatalog('skating')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Skating products">
+        <div class="sport-img-wrap"><img src="assets/tom-morbey-r1SwcagHVG0-unsplash.jpg" alt="Skating" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div><span class="sport-tag">New</span></div>
+        <div class="sport-name">Skating</div>
+      </div>
+    </div>
+
+    <h3 class="sports-group-heading">🏠 Indoor Games</h3>
+    <div class="sports-grid" id="indoorGrid">
+      <div class="sport-item" data-tag="indoor" onclick="openCatalog('tabletennis')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Table Tennis products">
+        <div class="sport-img-wrap"><img src="assets/inkiipow-JwxatcF2Oec-unsplash (1).jpg" alt="Table Tennis" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div></div>
+        <div class="sport-name">Table Tennis</div>
+      </div>
+      <div class="sport-item" data-tag="indoor" onclick="openCatalog('indoor')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Indoor Games products">
+        <div class="sport-img-wrap"><img src="assets/gr-stocks-Iq9SaJezkOE-unsplash.jpg" alt="Chess" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div></div>
+        <div class="sport-name">Chess</div>
+      </div>
+      <div class="sport-item" data-tag="indoor" onclick="openCatalog('indoor')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Indoor Games products">
+        <div class="sport-img-wrap"><img src="assets/shamoil-vxnO9ce-MmM-unsplash.jpg" alt="Carrom" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div></div>
+        <div class="sport-name">Carrom</div>
+      </div>
+    </div>
+
+    <h3 class="sports-group-heading">🎒 Accessories</h3>
+    <div class="sports-grid" id="accessoriesGrid">
+      <div class="sport-item" data-tag="accessories" onclick="openCatalog('accessories')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Sports Accessories products">
+        <div class="sport-img-wrap"><img src="assets/erica-steeves-PfQh55R0ZtE-unsplash.jpg" alt="Caps" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div><span class="sport-tag">New</span></div>
+        <div class="sport-name">Caps</div>
+      </div>
+      <div class="sport-item" data-tag="accessories" onclick="openCatalog('accessories')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Sports Accessories products">
+        <div class="sport-img-wrap"><img src="assets/accessories-wrist-bands.jpg" alt="Wrist Bands" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div></div>
+        <div class="sport-name">Wrist Bands</div>
+      </div>
+      <div class="sport-item" data-tag="accessories" onclick="openCatalog('accessories')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Sports Accessories products">
+        <div class="sport-img-wrap"><img src="assets/accessories-sweat-bands.jpg" alt="Sweat Bands" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div></div>
+        <div class="sport-name">Sweat Bands</div>
+      </div>
+      <div class="sport-item" data-tag="accessories" onclick="openCatalog('accessories')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Sports Accessories products">
+        <div class="sport-img-wrap"><img src="assets/accessories-head-bands.jpg" alt="Head Bands" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div></div>
+        <div class="sport-name">Head Bands</div>
+      </div>
+      <div class="sport-item" data-tag="accessories" onclick="openCatalog('accessories')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Sports Accessories products">
+        <div class="sport-img-wrap"><img src="assets/accessories-sports-bags.jpg" alt="Sports Bags" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div></div>
+        <div class="sport-name">Sports Bags</div>
+      </div>
+      <div class="sport-item" data-tag="accessories" onclick="openCatalog('accessories')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Sports Accessories products">
+        <div class="sport-img-wrap"><img src="assets/accessories-water-bottles.jpg" alt="Water Bottles" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div></div>
+        <div class="sport-name">Water Bottles</div>
+      </div>
+      <div class="sport-item" data-tag="accessories" onclick="openCatalog('accessories')" style="cursor:pointer;" role="button" tabindex="0" aria-label="View Sports Accessories products">
+        <div class="sport-img-wrap"><img src="assets/accessories-air-pumps.jpg" alt="Air Pumps" width="500" height="320" loading="lazy" decoding="async" /><div class="sport-img-overlay"></div></div>
+        <div class="sport-name">Air Pumps</div>
+      </div>
+    </div>
+
+    <div class="custom-jersey-card">
+      <div>
+        <h3>Custom Jerseys for Every Sport</h3>
+        <p>Team jerseys with your name, number, and logo. Bulk orders welcome with fast turnaround for cricket, football, kabaddi, basketball, and more.</p>
+        <a href="#store" class="btn-jersey">Order at Your Nearest Store →</a>
+      </div>
+      <div class="jersey-images">
+        <img src="assets/photo-1773355579207-4bc7a0915e74.jpg" alt="Sports Jerseys Displayed in Store" width="400" height="280" loading="lazy" decoding="async" />
+        <img src="assets/photo-1773355578777-7cbbff303bdf.jpg" alt="Numbered Sports Jerseys Displayed on Wall" width="400" height="280" loading="lazy" decoding="async" />
+        <img src="assets/photo-1655089131279-8029e8a21ac6.jpg" alt="Blue and Red Team Sports Jerseys" width="400" height="280" loading="lazy" decoding="async" />
+        <img src="assets/photo-1693683224122-0a8e206f248d.jpg" alt="Close-up of Numbered Sports Jersey" width="400" height="280" loading="lazy" decoding="async" />
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     ABOUT
+════════════════════════════ -->
+<section class="dark-bg" id="about" style="padding-top:0;">
+  <div class="container">
+    <div class="white-card about-card">
+      <h3>About JK Sports</h3>
+      <p>JK Sports supplies quality sports equipment, custom team jerseys, sports medals, and gym gear for local clubs, schools, and athletes across Namakkal. Two branches, expert staff, and genuinely competitive prices.</p>
+      <a href="#store" class="btn-explore" style="font-size:0.9rem;">Find Our Store →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     BUYING GUIDE / FAQ
+════════════════════════════ -->
+<section class="dark-bg guide-section" style="padding-top:0;">
+  <div class="container">
+    <div class="guide-frame">
+      <div class="guide-header">
+        <div>
+          <p class="guide-label">BUYING GUIDE</p>
+          <h2 class="guide-main-title">Master Your Gear Selection</h2>
+          <p>Expert advice to help you gear up like a pro.</p>
+        </div>
+        <div class="guide-status"><span class="status-dot"></span> Live Support Available</div>
+      </div>
+      <div class="tips-carousel-container">
+        <span class="carousel-label">Quick Pro-Tips — swipe to explore</span>
+        <div class="tips-carousel">
+          <div class="tip-card"><div class="tip-icon">🏏</div><h4>Bat Selection</h4><p>Heavier toe = more power. Lighter = more control. Check the balance point.</p></div>
+          <div class="tip-card"><div class="tip-icon">🏸</div><h4>Racket Tension</h4><p>Higher tension = control. Lower tension = power. Match to your level.</p></div>
+          <div class="tip-card"><div class="tip-icon">👕</div><h4>Jersey Fit</h4><p>Athletic Fit for match-play. Regular Fit for training — better airflow.</p></div>
+          <div class="tip-card"><div class="tip-icon">👟</div><h4>Footwear</h4><p>Surface matters — Grass, Clay, or Indoor Court. Wrong shoes = injuries.</p></div>
+          <div class="tip-card"><div class="tip-icon">🥇</div><h4>Event Medals</h4><p>Order early for bulk events. We offer engraving and custom ribbons.</p></div>
+        </div>
+      </div>
+      <div class="guide-split">
+        <div class="guide-info-box">
+          <span class="accent-tag">GUIDE</span>
+          <h3>Common Questions</h3>
+          <p>Most frequent queries from athletes and schools in Namakkal.</p>
+          <div class="info-footer"><small>Need more help?</small><a href="#store" class="btn-mini">Contact Expert</a></div>
+        </div>
+        <div class="guide-accordion">
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Are sports medals available? <span class="chevron">∨</span></div>
+            <div class="faq-a">Yes! Sports medals available for schools, colleges, tournaments, and events — gold, silver, and bronze. Engraving and ribbon options. Call for bulk pricing.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Do you stock gym equipment? <span class="chevron">∨</span></div>
+            <div class="faq-a">Yes. We carry dumbbells, barbells, weight plates, benches, and more for home and commercial gym setups. Visit in-store for current stock.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">Can you handle team jersey orders? <span class="chevron">∨</span></div>
+            <div class="faq-a">Absolutely — bulk school and club orders with high-quality sublimation printing for any sport.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">What sports do you cover? <span class="chevron">∨</span></div>
+            <div class="faq-a">Cricket, Badminton, Football, Kabaddi, Basketball, Tennis, Table Tennis, Volleyball, Hockey, Chess, Carrom, Athletics, Yoga, Swimming and more — 15+ sports total.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q" onclick="toggleFaq(this)">How do I find your nearest branch? <span class="chevron">∨</span></div>
+            <div class="faq-a">Scroll to the Find Store section — both branch addresses are listed with direct Google Maps links.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     TESTIMONIALS
+════════════════════════════ -->
+<section class="dark-bg" style="padding-top:0;">
+  <div class="container">
+    <h2 class="section-title" style="margin-bottom:2rem;">What Our Customers Say</h2>
+    <div class="testimonial-grid">
+      <div class="testi-card"><h4>Rajan M. — Cricket</h4><div class="stars">★★★★★</div><p>"Best cricket shop in Namakkal. Got my SG bat at a great price!"</p></div>
+      <div class="testi-card"><h4>Priya K. — Badminton</h4><div class="stars">★★★★★</div><p>"Yonex rackets always in stock. Very helpful and knowledgeable staff."</p></div>
+      <div class="testi-card"><h4>Coach Senthil — Football</h4><div class="stars">★★★★★</div><p>"Ordered jerseys for our whole team — excellent quality and fast delivery!"</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     FIND STORE
+════════════════════════════ -->
+<section class="dark-bg" id="store" style="padding-top:0;">
+  <div class="container">
+    <div class="white-card">
+      <div class="card-header">
+        <div>
+          <p style="font-size:0.68rem;font-weight:800;letter-spacing:2px;color:#999;text-transform:uppercase;margin-bottom:0.2rem;">📍 Find Us</p>
+          <h2 class="card-title">Our Branches</h2>
+        </div>
+      </div>
+      <div class="pulse-grid" style="margin-top:1.5rem;margin-bottom:0;">
+        <div class="pulse-card">
+          <h3 class="pulse-title">Main Branch 🏪</h3>
+          <p style="color:var(--text-dim);margin-bottom:1rem;">Periyanna Gounder Plaza, Namakkal</p>
+          <a href="https://maps.google.com/?q=JK+Sports+Namakkal" target="_blank" class="btn-jersey" style="background:var(--primary);color:white;display:inline-block;">Get Directions →</a>
+        </div>
+        <div class="pulse-card">
+          <h3 class="pulse-title">Second Branch 🏪</h3>
+          <p style="color:var(--text-dim);margin-bottom:1rem;">Salem Rd, R.P Pudur, Namakkal</p>
+          <a href="https://maps.google.com/?q=JK+Sports+Namakkal+Salem+Road" target="_blank" class="btn-jersey" style="background:var(--primary);color:white;display:inline-block;">Get Directions →</a>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--light-border);">
+        <p style="font-size:0.68rem;font-weight:800;letter-spacing:2px;color:var(--text-dim);text-transform:uppercase;margin-bottom:0.5rem;">Call Us Directly</p>
+        <a href="tel:+919786722444" style="font-size:1.55rem;font-weight:900;color:var(--text-main);text-decoration:none;display:block;">+91 97867 22444</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     FOOTER
+════════════════════════════ -->
+<footer>
+  <div class="footer-card">
+    <div class="footer-grid">
+
+      <div class="footer-col brand-col">
+        <div class="brand-col-inner">
+          <img src="assets/logo.jpeg" alt="JK Sports" class="footer-logo" width="55" height="55" loading="lazy" decoding="async" />
+          <div class="brand-text">
+            <h3>JK Sports</h3>
+            <p>Gear Up. Show Up. Win.</p>
+          </div>
+        </div>
+        <p style="font-size:0.84rem;color:#666;margin-top:0.25rem;">Your trusted sports partner in Namakkal since 2021.</p>
+        <div class="footer-social-row">
+          <a href="https://www.instagram.com/jk_sports_nkl?igsh=M3NldHJxcmhmaW0="
+             target="_blank" rel="noopener"
+             class="social-icon ig" aria-label="Instagram">
+            <svg class="social-svg" viewBox="0 0 448 512" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+          </a>
+          <a href="https://youtube.com/@jksportsnamakkal?si=RAhVX9I3R_KHZa9T"
+             target="_blank" rel="noopener"
+             class="social-icon yt" aria-label="YouTube">
+            <svg class="social-svg" viewBox="0 0 576 512" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.1 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg>
+          </a>
+          <a href="https://wa.me/919786722444"
+             target="_blank" rel="noopener"
+             class="social-icon wa" aria-label="WhatsApp">
+            <svg class="social-svg" viewBox="0 0 448 512" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Visit Us</h4>
+        <div class="branch-item">
+          <div class="branch-header"><strong>Main Branch</strong></div>
+          <p>Periyanna Gounder Plaza, Namakkal
+            <a href="https://maps.google.com/?q=JK+Sports+Namakkal" target="_blank" class="route-link">Get Route</a>
+          </p>
+        </div>
+        <div class="branch-item">
+          <div class="branch-header"><strong>Second Branch</strong></div>
+          <p>Salem Rd, R.P Pudur, Namakkal
+            <a href="https://maps.google.com/?q=JK+Sports+Namakkal+Salem+Road" target="_blank" class="route-link">Get Route</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow &amp; Contact</h4>
+        <div class="social-links">
+          <a href="https://www.instagram.com/jk_sports_nkl?igsh=M3NldHJxcmhmaW0="
+             target="_blank" rel="noopener"><svg class="social-svg" viewBox="0 0 448 512" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg> Instagram</a>
+          <span class="dot">·</span>
+          <a href="https://youtube.com/@jksportsnamakkal?si=RAhVX9I3R_KHZa9T"
+             target="_blank" rel="noopener"><svg class="social-svg" viewBox="0 0 576 512" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.1 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg> YouTube</a>
+        </div>
+        <div class="social-links" style="margin-bottom:1rem;">
+          <a href="https://wa.me/919786722444" target="_blank" rel="noopener">
+            <svg class="social-svg" viewBox="0 0 448 512" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> WhatsApp Us
+          </a>
+        </div>
+        <a href="tel:+919786722444" class="footer-phone" style="text-decoration:none;">+91 97867 22444</a>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 JK Sports Namakkal. All rights reserved. Crafted with ❤️ for sport.</p>
+    </div>
+
+  </div>
+</footer>
+
+<!-- ════════════════════════════
+     SPORT CATALOG MODAL
+════════════════════════════ -->
+<div class="modal-overlay" id="catalogModal"
+     role="dialog" aria-modal="true" aria-labelledby="catalogTitle">
+  <div class="modal-box catalog-box">
+    <button class="modal-close-btn" id="catalogCloseBtn" aria-label="Close">&#10005;</button>
+    <div class="catalog-header">
+      <span class="modal-tag" id="catalogTag"></span>
+      <h3 id="catalogTitle"></h3>
+      <p id="catalogDesc"></p>
+    </div>
+    <div class="catalog-items" id="catalogItems"></div>
+    <div class="catalog-footer">
+      <a href="#store" class="btn-m-primary" id="catalogStoreCTA">Visit Store to Buy</a>
+      <a href="https://wa.me/919786722444" target="_blank" rel="noopener" class="btn-m-wa">
+        <svg class="social-svg" viewBox="0 0 448 512" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js?v=20260704" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,579 @@
+{
+  "cricket": {
+    "title": "Cricket Gear",
+    "tag": "CRICKET ZONE",
+    "desc": "Everything you need for cricket — bats, balls, protective gear, and accessories.",
+    "items": [
+      {
+        "img": "assets/alfred-kenneally-XqFeVprJ3jQ-unsplash.jpg",
+        "name": "Premium Cricket Bat",
+        "desc": "Kashmir & English willow, Grade 1–3",
+        "stock": true
+      },
+      {
+        "img": "assets/manoj-poosam-bs25aPG9tRs-unsplash.jpg",
+        "name": "Match-Grade Ball",
+        "desc": "SG, Kookaburra & local leather balls",
+        "stock": true
+      },
+      {
+        "img": "assets/photo-1646282814550-f521d9b57a59.jpg",
+        "name": "Sri Lankan Turf Bats",
+        "desc": "Premium Ceylon willow, turf wickets",
+        "stock": true
+      },
+      {
+        "img": "assets/kabir-cheema-vBdnsrIlueo-unsplash.jpg",
+        "name": "Batting Pads & Gloves",
+        "desc": "Protective gear for batsmen",
+        "stock": true
+      },
+      {
+        "img": "assets/moonwalkr-Ysmv55PONTo-unsplash.jpg",
+        "name": "Cricket Helmets",
+        "desc": "ICC-spec protective helmets",
+        "stock": true
+      },
+      {
+        "img": "assets/photo-1644984785457-facabdba5b16.jpg",
+        "name": "Wicket Keeping Kit",
+        "desc": "Gloves, pads & inner gloves",
+        "stock": true
+      }
+    ]
+  },
+  "badminton": {
+    "title": "Badminton Gear",
+    "tag": "BADMINTON ZONE",
+    "desc": "Yonex rackets, shuttles, and accessories for every skill level.",
+    "items": [
+      {
+        "img": "assets/jk-sports-namakkal-namakkal-ho-namakkal-sports-goods-dealers-yonex-04zxd27huf.jpg",
+        "name": "Yonex Racket Pro",
+        "desc": "Arcsaber / Astrox / Nanoray series",
+        "stock": true
+      },
+      {
+        "img": "assets/photo-1521537634581-0dced2fee2ef.jpg",
+        "name": "Feather Shuttlecocks",
+        "desc": "Tournament & practice grade",
+        "stock": true
+      },
+      {
+        "img": "assets/photo-1708312604109-16c0be9326cd.jpg",
+        "name": "Grip Tape & Overgrips",
+        "desc": "Sweat-absorbent racket grips",
+        "stock": true
+      },
+      {
+        "img": "assets/photo-1617696618050-b0fef0c666af.jpg",
+        "name": "Badminton Shoes",
+        "desc": "Non-marking court soles",
+        "stock": true
+      },
+      {
+        "img": "assets/photo-1599391398131-cd12dfc6c24e.jpg",
+        "name": "Racket Stringing Service",
+        "desc": "Custom tension stringing in-store",
+        "stock": true
+      }
+    ]
+  },
+  "football": {
+    "title": "Football & Ball Sports",
+    "tag": "BALL SPORTS ZONE",
+    "desc": "Match balls and gear for football, volleyball, kabaddi, basketball and hockey.",
+    "items": [
+      {
+        "img": "assets/md-mahdi-lQpFRPrepQ8-unsplash.jpg",
+        "name": "Match-Grade Football",
+        "desc": "Size 4 & 5, TPU and leather",
+        "stock": true
+      },
+      {
+        "img": "assets/anastase-maragos-9QLqrRyrKyc-unsplash.jpg",
+        "name": "Shin Guards",
+        "desc": "Lightweight protective guards",
+        "stock": true
+      },
+      {
+        "img": "assets/fachry-zella-devandra-Yta-zdP9PVM-unsplash.jpg",
+        "name": "Football Boots / Cleats",
+        "desc": "Firm-ground & turf studs",
+        "stock": true
+      },
+      {
+        "img": "assets/thomas-serer-Kxjkme-WQMQ-unsplash.jpg",
+        "name": "Goal Nets & Cones",
+        "desc": "Training equipment for clubs",
+        "stock": true
+      }
+    ]
+  },
+  "basketball": {
+    "title": "Basketball Gear",
+    "tag": "BALL SPORTS ZONE",
+    "desc": "Indoor and outdoor basketballs plus support gear.",
+    "items": [
+      {
+        "img": "assets/abhay-siby-mathew--itqD54b02U-unsplash.jpg",
+        "name": "Spalding Outdoor Ball",
+        "desc": "Durable rubber outdoor ball",
+        "stock": true
+      },
+      {
+        "img": "assets/gabriel-weyand-XeS9BdgJjPs-unsplash.jpg",
+        "name": "Indoor Rubber Ball",
+        "desc": "Indoor court grip ball",
+        "stock": true
+      },
+      {
+        "img": "assets/chuttersnap-XuZCMNC0NQ4-unsplash.jpg",
+        "name": "Ankle Support Guards",
+        "desc": "Compression ankle braces",
+        "stock": true
+      }
+    ]
+  },
+  "volleyball": {
+    "title": "Volleyball Gear",
+    "tag": "BALL SPORTS ZONE",
+    "desc": "Match volleyballs and knee support gear.",
+    "items": [
+      {
+        "img": "assets/caglar-oskay-pYHFDv6vI-o-unsplash.jpg",
+        "name": "Match Volleyball",
+        "desc": "Official size & weight",
+        "stock": true
+      },
+      {
+        "img": "assets/alvito-danendra-gwhuc5Fv4oI-unsplash.jpg",
+        "name": "Knee Pads",
+        "desc": "Cushioned protective pads",
+        "stock": true
+      }
+    ]
+  },
+  "kabaddi": {
+    "title": "Kabaddi Gear",
+    "tag": "BALL SPORTS ZONE",
+    "desc": "Local favourite — court gear and accessories for kabaddi teams.",
+    "items": [
+      {
+        "img": "assets/arto-suraj-PIzJehCMXVA-unsplash.jpg",
+        "name": "Kabaddi Mat / Court Marking",
+        "desc": "Standard court setup kit",
+        "stock": true
+      },
+      {
+        "img": "assets/photo-1655089131279-8029e8a21ac6.jpg",
+        "name": "Team Jerseys",
+        "desc": "Custom printed team kits",
+        "stock": true
+      }
+    ]
+  },
+  "hockey": {
+    "title": "Hockey Gear",
+    "tag": "BALL SPORTS ZONE",
+    "desc": "Sticks, balls, and protective gear for hockey players.",
+    "items": [
+      {
+        "img": "assets/julian-gentile---_JOIilJBg-unsplash.jpg",
+        "name": "Hockey Stick",
+        "desc": "Composite & wooden sticks",
+        "stock": true
+      },
+      {
+        "img": "assets/astrid-schaffner-bi_amI3F4co-unsplash.jpg",
+        "name": "Hockey Ball",
+        "desc": "Hard plastic match ball",
+        "stock": true
+      }
+    ]
+  },
+  "tennis": {
+    "title": "Tennis Gear",
+    "tag": "RACKET ZONE",
+    "desc": "Rackets and balls for casual to professional play.",
+    "items": [
+      {
+        "img": "assets/renith-r-MLU_X1d3ofQ-unsplash.jpg",
+        "name": "Graphite Tennis Racket",
+        "desc": "Beginner to pro-staff series",
+        "stock": true
+      },
+      {
+        "img": "assets/guilherme-maggieri-OH5g9IgcMWs-unsplash.jpg",
+        "name": "Pressureless Tennis Balls",
+        "desc": "Practice & match cans",
+        "stock": true
+      },
+      {
+        "img": "assets/photo-1612364741797-c3c1756afb91.jpg",
+        "name": "Vibration Dampeners",
+        "desc": "String vibration control",
+        "stock": true
+      }
+    ]
+  },
+  "tabletennis": {
+    "title": "Table Tennis Gear",
+    "tag": "RACKET ZONE",
+    "desc": "Paddles, balls and table accessories.",
+    "items": [
+      {
+        "img": "assets/inkiipow-JwxatcF2Oec-unsplash.jpg",
+        "name": "TT Paddle / Racket",
+        "desc": "Rubber-faced paddles, all grades",
+        "stock": true
+      },
+      {
+        "img": "assets/kiran-ck-KMvLgCaGaSc-unsplash.jpg",
+        "name": "TT Balls (3-Star)",
+        "desc": "Tournament-grade balls",
+        "stock": true
+      }
+    ]
+  },
+  "fitness": {
+    "title": "Gym & Fitness Equipment",
+    "tag": "GYM EQUIPMENT AVAILABLE",
+    "desc": "Dumbbells, barbells, benches, resistance bands, and full home-gym sets from trusted brands.",
+    "items": [
+      {
+        "img": "assets/blend-archive-vDkKAbY__v4-unsplash.jpg",
+        "name": "Dumbbell Sets",
+        "desc": "Adjustable & fixed weight options",
+        "stock": true
+      },
+      {
+        "img": "assets/photo-1571019614242-c5c5dee9f50b.jpg",
+        "name": "Barbells & Weight Plates",
+        "desc": "Olympic & standard bars",
+        "stock": true
+      },
+      {
+        "img": "assets/kelly-sikkema-IZOAOjvwhaM-unsplash.jpg",
+        "name": "Resistance Bands",
+        "desc": "Multiple resistance levels",
+        "stock": true
+      },
+      {
+        "img": "assets/life-fit-A1I0n1dIv9Q-unsplash.jpg",
+        "name": "Gym Benches",
+        "desc": "Flat & adjustable incline benches",
+        "stock": true
+      },
+      {
+        "img": "assets/roberto-shumski-SHDUbprcCB4-unsplash.jpg",
+        "name": "Pull-Up Bars",
+        "desc": "Wall-mounted & doorway bars",
+        "stock": true
+      },
+      {
+        "img": "assets/olek-buzunov-lru_Wt0xJtw-unsplash.jpg",
+        "name": "Custom Sports Medals",
+        "desc": "For schools, colleges & events",
+        "stock": true
+      }
+    ]
+  },
+  "yoga": {
+    "title": "Yoga & Wellness",
+    "tag": "WELLNESS ZONE",
+    "desc": "Mats and accessories for yoga and wellness routines.",
+    "items": [
+      {
+        "img": "assets/dane-wetton-t1NEMSm1rgI-unsplash.jpg",
+        "name": "Yoga Mats",
+        "desc": "Non-slip, multiple thicknesses",
+        "stock": true
+      },
+      {
+        "img": "assets/samantha-sheppard-b8Q5fHBsyik-unsplash.jpg",
+        "name": "Yoga Blocks & Straps",
+        "desc": "Support props for practice",
+        "stock": true
+      }
+    ]
+  },
+  "athletics": {
+    "title": "Athletics Gear",
+    "tag": "ATHLETICS ZONE",
+    "desc": "Track and field essentials for athletes.",
+    "items": [
+      {
+        "img": "assets/photo-1547941126-3d5322b218b0.jpg",
+        "name": "Running Spikes",
+        "desc": "Track shoes for sprint & distance",
+        "stock": true
+      },
+      {
+        "img": "assets/stanislav-2Yj6MBvJ0sg-unsplash.jpg",
+        "name": "Stopwatches & Batons",
+        "desc": "Relay & timing equipment",
+        "stock": true
+      },
+      {
+        "img": "assets/photo-1579156618441-0f9f420e2a25.jpg",
+        "name": "Javelins",
+        "desc": "Competition & training javelins, all weights",
+        "stock": true
+      },
+      {
+        "img": "assets/photo-1742111281708-407b8f75da6f.jpg",
+        "name": "Shot Put",
+        "desc": "Indoor & outdoor shot put balls, various weights",
+        "stock": true
+      },
+      {
+        "img": "assets/photo-1742495212062-eace5ce3b532.jpg",
+        "name": "Discus",
+        "desc": "Training & competition discus",
+        "stock": true
+      },
+      {
+        "img": "assets/photo-1774748863093-f6935b7f49f8.jpg",
+        "name": "Hurdles",
+        "desc": "Adjustable height training hurdles",
+        "stock": true
+      },
+      {
+        "img": "assets/photo-1526676317768-d9b14f15615a.jpg",
+        "name": "Starting Blocks",
+        "desc": "Sprint starting blocks for track meets",
+        "stock": true
+      },
+      {
+        "img": "assets/photo-1776705865346-3f32edc23b60.jpg",
+        "name": "Long & High Jump Gear",
+        "desc": "Measuring tapes, landing mats & crossbars",
+        "stock": true
+      }
+    ]
+  },
+  "indoor": {
+    "title": "Indoor Games",
+    "tag": "INDOOR ZONE",
+    "desc": "Chess, carrom, and other indoor game sets.",
+    "items": [
+      {
+        "img": "assets/esma-q-MCC1g6Ziw-unsplash.jpg",
+        "name": "Chess Sets",
+        "desc": "Wooden & tournament boards",
+        "stock": true
+      },
+      {
+        "img": "assets/shamoil-REr7cehZGAY-unsplash.jpg",
+        "name": "Carrom Boards",
+        "desc": "Standard size with coins & striker",
+        "stock": true
+      }
+    ]
+  },
+  "swimming": {
+    "title": "Swimming Gear",
+    "tag": "AQUATICS ZONE",
+    "desc": "Goggles, caps and accessories for swimmers.",
+    "items": [
+      {
+        "img": "assets/maarten-van-den-heuvel-VAdFzJJDzgg-unsplash.jpg",
+        "name": "Swimming Goggles",
+        "desc": "Anti-fog, UV protection",
+        "stock": true
+      },
+      {
+        "img": "assets/quimcy-dsouza-ihMLaTZdeWs-unsplash.jpg",
+        "name": "Swim Caps",
+        "desc": "Silicone caps, all sizes",
+        "stock": true
+      }
+    ]
+  },
+  "medals": {
+    "title": "Medals & Trophies",
+    "tag": "CUSTOM MEDALS & TROPHIES AVAILABLE",
+    "desc": "Medals and trophies for schools, colleges, tournaments, and events — engraving, ribbon, and sizing options included.",
+    "items": [
+      {
+        "img": "assets/george-pisarevsky-u-OIymmnw1s-unsplash.jpg",
+        "name": "Gold Medal",
+        "desc": "Gold-finish medal with ribbon, engraving available",
+        "stock": true
+      },
+      {
+        "img": "assets/george-pisarevsky--g7l2UlC2T4-unsplash.jpg",
+        "name": "Silver Medal",
+        "desc": "Silver-finish medal with ribbon, engraving available",
+        "stock": true
+      },
+      {
+        "img": "assets/george-pisarevsky-Giixpknf8Sg-unsplash.jpg",
+        "name": "Bronze Medal",
+        "desc": "Bronze-finish medal with ribbon, engraving available",
+        "stock": true
+      },
+      {
+        "img": "assets/giorgio-trovato-_XTY6lD8jgM-unsplash.jpg",
+        "name": "Trophy — 1 ft",
+        "desc": "Compact trophy, ideal for runner-up & participation awards",
+        "stock": true
+      },
+      {
+        "img": "assets/marek-studzinski-g6w7SJZNbUc-unsplash.jpg",
+        "name": "Trophy — 1.5 ft",
+        "desc": "Mid-size trophy, popular for school & club events",
+        "stock": true
+      },
+      {
+        "img": "assets/ezequiel-garrido-E_OVdx3dbnU-unsplash.jpg",
+        "name": "Trophy — 2 ft",
+        "desc": "Large trophy, ideal for tournament champions",
+        "stock": true
+      },
+      {
+        "img": "assets/xavier-praillet-qk8R17BT5FY-unsplash.jpg",
+        "name": "Trophy — 3 ft",
+        "desc": "Premium grand trophy for finals & main events",
+        "stock": true
+      },
+      {
+        "img": "assets/tim-mossholder-tAGk5-IbMK0-unsplash.jpg",
+        "name": "Winner Shields",
+        "desc": "Wooden & acrylic shield plaques",
+        "stock": true
+      }
+    ]
+  },
+  "boxing": {
+    "title": "Boxing Gear",
+    "tag": "COMBAT SPORTS ZONE",
+    "desc": "Gloves, pads, and training gear for boxing.",
+    "items": [
+      {
+        "img": "assets/bogdan-yukhymchuk-XmvuWRDimrg-unsplash.jpg",
+        "name": "Boxing Gloves",
+        "desc": "Training & sparring gloves, all sizes",
+        "stock": true
+      },
+      {
+        "img": "assets/temple-noble-art-P3G0IbOexH8-unsplash.jpg",
+        "name": "Punching Bags",
+        "desc": "Heavy bags & speed bags",
+        "stock": true
+      },
+      {
+        "img": "assets/rocco-stoppoloni-wADtQq6OPPE-unsplash.jpg",
+        "name": "Hand Wraps",
+        "desc": "Wrist & knuckle support wraps",
+        "stock": true
+      },
+      {
+        "img": "assets/bui-hoang-long-y5-bgLrIwMs-unsplash.jpg",
+        "name": "Focus Pads & Mitts",
+        "desc": "Coach training pads",
+        "stock": true
+      }
+    ]
+  },
+  "turfbats": {
+    "title": "Sri Lankan Turf Bats",
+    "tag": "PREMIUM TURF BATS",
+    "desc": "Premium Ceylon willow turf bats, built for turf wicket cricket.",
+    "items": [
+      {
+        "img": "assets/photo-1593766821405-f605e0f9535f.jpg",
+        "name": "Sri Lankan Turf Bat",
+        "desc": "Premium Ceylon willow, turf wickets",
+        "stock": true
+      },
+      {
+        "img": "assets/photo-1677785643764-179393bc3842.jpg",
+        "name": "SL Turf Bat — Pro Grade",
+        "desc": "Heavier profile for power hitters",
+        "stock": true
+      },
+      {
+        "img": "assets/photo-1593766788306-28561086694e.jpg",
+        "name": "SL Turf Bat — Lightweight",
+        "desc": "Quicker pick-up, junior to club level",
+        "stock": true
+      }
+    ]
+  },
+  "skating": {
+    "title": "Skating Gear",
+    "tag": "JONEX SKATING ZONE",
+    "desc": "Jonex skates for training, fitness and everyday practice.",
+    "items": [
+      {
+        "img": "assets/reagan-m-Q68s5Vf40GM-unsplash.jpg",
+        "name": "Jonex Tenacity Skates",
+        "desc": "Durable Jonex Tenacity quad skates for training & recreational use",
+        "stock": true
+      },
+      {
+        "img": "assets/susan-weber-9RuN5pzalr4-unsplash.jpg",
+        "name": "Jonex Fix Body Professional Skates",
+        "desc": "Jonex Fix Body Professional — reinforced fixed-body skates for serious skaters",
+        "stock": true
+      },
+      {
+        "img": "assets/indira-tjokorda-Y-VYK0SDLxs-unsplash.jpg",
+        "name": "Inline Skates",
+        "desc": "All-purpose inline skates, beginner to intermediate levels",
+        "stock": true
+      }
+    ]
+  },
+  "accessories": {
+    "title": "Sports Accessories",
+    "tag": "ACCESSORIES ZONE",
+    "desc": "Caps, bands, bags and everyday essentials to complete your sports kit.",
+    "items": [
+      {
+        "img": "assets/sonu-kumar-8XZBP38QJFM-unsplash.jpg",
+        "name": "Sports Caps",
+        "desc": "Breathable caps for sun and sweat protection",
+        "stock": true
+      },
+      {
+        "img": "assets/luigi-estuye-lucreative-4w1353S-Drs-unsplash.jpg",
+        "name": "Wrist Bands",
+        "desc": "Sweat-absorbent wrist bands for training and matches",
+        "stock": true
+      },
+      {
+        "img": "assets/nathan-dumlao-4GLI-k4wmFg-unsplash.jpg",
+        "name": "Sweat Bands",
+        "desc": "Elastic sweat bands for active wear",
+        "stock": true
+      },
+      {
+        "img": "assets/brett-wharton-ZgwoBY6CwGI-unsplash.jpg",
+        "name": "Head Bands",
+        "desc": "Non-slip head bands for everyday training",
+        "stock": true
+      },
+      {
+        "img": "assets/andriyko-podilnyk-sGRJ36ogml8-unsplash.jpg",
+        "name": "Sports Bags",
+        "desc": "Durable kit bags for gear and equipment",
+        "stock": true
+      },
+      {
+        "img": "assets/joan-tran-reEySFadyJQ-unsplash.jpg",
+        "name": "Water Bottles",
+        "desc": "Sports water bottles, multiple sizes",
+        "stock": true
+      },
+      {
+        "img": "assets/anton-savinov-Q5t8eNYgDsA-unsplash.jpg",
+        "name": "Air Pumps",
+        "desc": "Ball and tube air pumps with needles",
+        "stock": true
+      }
+    ]
+  }
+}
