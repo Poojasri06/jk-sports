@@ -307,9 +307,9 @@ var CATALOG = {
     tag:   'JONEX SKATING ZONE',
     desc:  'Jonex skates for training, fitness and everyday practice.',
     items: [
-      { img: 'assets/skating-jonex-tenacity.jpg', name: 'Jonex Tenacity Skates', desc: 'Durable Jonex Tenacity quad skates for training & recreational use', stock: true },
-      { img: 'assets/skating-jonex-fixbody-professional.jpg', name: 'Jonex Fix Body Professional Skates', desc: 'Jonex Fix Body Professional — reinforced fixed-body skates for serious skaters', stock: true },
-      { img: 'assets/skating-inline-skates.jpg', name: 'Inline Skates', desc: 'All-purpose inline skates, beginner to intermediate levels', stock: true }
+      { img: 'assets/reagan-m-Q68s5Vf40GM-unsplash.jpg', name: 'Jonex Tenacity Skates', desc: 'Durable Jonex Tenacity quad skates for training & recreational use', stock: true },
+      { img: 'assets/susan-weber-9RuN5pzalr4-unsplash.jpg', name: 'Jonex Fix Body Professional Skates', desc: 'Jonex Fix Body Professional — reinforced fixed-body skates for serious skaters', stock: true },
+      { img: 'assets/indira-tjokorda-Y-VYK0SDLxs-unsplash.jpg', name: 'Inline Skates', desc: 'All-purpose inline skates, beginner to intermediate levels', stock: true }
     ]
   },
   accessories: {
@@ -317,13 +317,13 @@ var CATALOG = {
     tag:   'ACCESSORIES ZONE',
     desc:  'Caps, bands, bags and everyday essentials to complete your sports kit.',
     items: [
-      { img: 'assets/accessories-caps.jpg', name: 'Sports Caps', desc: 'Breathable caps for sun and sweat protection', stock: true },
-      { img: 'assets/accessories-wrist-bands.jpg', name: 'Wrist Bands', desc: 'Sweat-absorbent wrist bands for training and matches', stock: true },
-      { img: 'assets/accessories-sweat-bands.jpg', name: 'Sweat Bands', desc: 'Elastic sweat bands for active wear', stock: true },
-      { img: 'assets/accessories-head-bands.jpg', name: 'Head Bands', desc: 'Non-slip head bands for everyday training', stock: true },
-      { img: 'assets/accessories-sports-bags.jpg', name: 'Sports Bags', desc: 'Durable kit bags for gear and equipment', stock: true },
-      { img: 'assets/accessories-water-bottles.jpg', name: 'Water Bottles', desc: 'Sports water bottles, multiple sizes', stock: true },
-      { img: 'assets/accessories-air-pumps.jpg', name: 'Air Pumps', desc: 'Ball and tube air pumps with needles', stock: true }
+      { img: 'assets/sonu-kumar-8XZBP38QJFM-unsplash.jpg', name: 'Sports Caps', desc: 'Breathable caps for sun and sweat protection', stock: true },
+      { img: 'assets/luigi-estuye-lucreative-4w1353S-Drs-unsplash.jpg', name: 'Wrist Bands', desc: 'Sweat-absorbent wrist bands for training and matches', stock: true },
+      { img: 'assets/nathan-dumlao-4GLI-k4wmFg-unsplash.jpg', name: 'Sweat Bands', desc: 'Elastic sweat bands for active wear', stock: true },
+      { img: 'assets/brett-wharton-ZgwoBY6CwGI-unsplash.jpg', name: 'Head Bands', desc: 'Non-slip head bands for everyday training', stock: true },
+      { img: 'assets/andriyko-podilnyk-sGRJ36ogml8-unsplash.jpg', name: 'Sports Bags', desc: 'Durable kit bags for gear and equipment', stock: true },
+      { img: 'assets/joan-tran-reEySFadyJQ-unsplash.jpg', name: 'Water Bottles', desc: 'Sports water bottles, multiple sizes', stock: true },
+      { img: 'assets/anton-savinov-Q5t8eNYgDsA-unsplash.jpg', name: 'Air Pumps', desc: 'Ball and tube air pumps with needles', stock: true }
     ]
   }
 };
