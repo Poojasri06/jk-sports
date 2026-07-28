@@ -112,12 +112,6 @@ nav {
   padding: 0 1.25rem;
   background: var(--dark);
 }
-@media (max-width: 768px) {
-  .hero-bg {
-    background-image: url('assets/file_00000000ca588208a3af40fef0a62d57.png');
-    background-position: center 30%;
-  }
-}
 
 /* FIX: hero background is now a CSS background-image instead of an <img> tag.
    This is the change that resolves the "background image not showing" issue —
@@ -140,6 +134,18 @@ nav {
   position: absolute; inset: 0;
   background: linear-gradient(135deg, rgba(6,16,28,0.72) 0%, rgba(6,16,28,0.45) 50%, rgba(6,16,28,0.22) 100%);
 }
+
+/* Mobile-only background image override — must come AFTER the main
+   .hero-bg rule above so it correctly wins on small screens (equal CSS
+   specificity means source order decides the winner, so this block has
+   to be the LAST .hero-bg rule in the file to take effect on mobile). */
+@media (max-width: 768px) {
+  .hero-bg {
+    background-image: url('assets/file_00000000ca588208a3af40fef0a62d57.png');
+    background-position: center 30%;
+  }
+}
+
 .hero-container {
   max-width: var(--max); width: 100%;
   display: grid;
