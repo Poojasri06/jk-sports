@@ -112,6 +112,12 @@ nav {
   padding: 0 1.25rem;
   background: var(--dark);
 }
+@media (max-width: 768px) {
+  .hero-bg {
+    background-image: url('assets/file_00000000ca588208a3af40fef0a62d57.png');
+    background-position: center 30%;
+  }
+}
 
 /* FIX: hero background is now a CSS background-image instead of an <img> tag.
    This is the change that resolves the "background image not showing" issue —
