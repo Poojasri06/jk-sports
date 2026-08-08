@@ -104,7 +104,7 @@
       },
       {
         "img": "assets/thomas-serer-Kxjkme-WQMQ-unsplash.jpg",
-        "name": "Goal Nets & Cones",
+        "name": "Nets & Cones",
         "desc": "Training equipment for clubs",
         "stock": true
       }
@@ -117,7 +117,7 @@
     "items": [
       {
         "img": "assets/abhay-siby-mathew--itqD54b02U-unsplash.jpg",
-        "name": "Spalding Outdoor Ball",
+        "name": "NVIA Outdoor Ball",
         "desc": "Durable rubber outdoor ball",
         "stock": true
       },
@@ -205,7 +205,7 @@
       },
       {
         "img": "assets/guilherme-maggieri-OH5g9IgcMWs-unsplash.jpg",
-        "name": "Pressureless Tennis Balls",
+        "name": "Tennis Balls",
         "desc": "Practice & match cans",
         "stock": true
       },
@@ -290,12 +290,6 @@
         "desc": "Non-slip, multiple thicknesses",
         "stock": true
       },
-      {
-        "img": "assets/samantha-sheppard-b8Q5fHBsyik-unsplash.jpg",
-        "name": "Yoga Blocks & Straps",
-        "desc": "Support props for practice",
-        "stock": true
-      }
     ]
   },
   "athletics": {
@@ -325,12 +319,6 @@
         "img": "assets/photo-1742111281708-407b8f75da6f.jpg",
         "name": "Shot Put",
         "desc": "Indoor & outdoor shot put balls, various weights",
-        "stock": true
-      },
-      {
-        "img": "assets/photo-1742495212062-eace5ce3b532.jpg",
-        "name": "Discus",
-        "desc": "Training & competition discus",
         "stock": true
       },
       {
@@ -393,8 +381,8 @@
   },
   "medals": {
     "title": "Medals & Trophies",
-    "tag": "CUSTOM MEDALS & TROPHIES AVAILABLE",
-    "desc": "Medals and trophies for schools, colleges, tournaments, and events — engraving, ribbon, and sizing options included.",
+    "tag": "TROPHIES AVAILABLE",
+    "desc": "trophies for schools, colleges, tournaments, and events — engraving, ribbon, and sizing options included.",
     "items": [
       {
         "img": "assets/george-pisarevsky-u-OIymmnw1s-unsplash.jpg",
@@ -509,14 +497,14 @@
     "items": [
       {
         "img": "assets/reagan-m-Q68s5Vf40GM-unsplash.jpg",
-        "name": "Jonex Tenacity Skates",
-        "desc": "Durable Jonex Tenacity quad skates for training & recreational use",
+        "name": "Tenacity Skates",
+        "desc": "Durable Tenacity quad skates for training & recreational use",
         "stock": true
       },
       {
         "img": "assets/susan-weber-9RuN5pzalr4-unsplash.jpg",
-        "name": "Jonex Fix Body Professional Skates",
-        "desc": "Jonex Fix Body Professional — reinforced fixed-body skates for serious skaters",
+        "name": "Fix Body Professional Skates",
+        "desc": "Fix Body Professional — reinforced fixed-body skates for serious skaters",
         "stock": true
       },
       {
