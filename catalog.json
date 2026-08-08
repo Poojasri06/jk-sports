@@ -98,7 +98,7 @@
       },
       {
         "img": "assets/fachry-zella-devandra-Yta-zdP9PVM-unsplash.jpg",
-        "name": "Football Boots / Cleats",
+        "name": "Football Boots",
         "desc": "Firm-ground & turf studs",
         "stock": true
       },
@@ -116,13 +116,13 @@
     "desc": "Indoor and outdoor basketballs plus support gear.",
     "items": [
       {
-        "img": "assets/abhay-siby-mathew--itqD54b02U-unsplash.jpg",
+        "img": "assets/2B0A1298.webp",
         "name": "NVIA Outdoor Ball",
         "desc": "Durable rubber outdoor ball",
         "stock": true
       },
       {
-        "img": "assets/gabriel-weyand-XeS9BdgJjPs-unsplash.jpg",
+        "img": "assets/71Hk7LW-NmL.jpg",
         "name": "Indoor Rubber Ball",
         "desc": "Indoor court grip ball",
         "stock": true
@@ -471,19 +471,19 @@
     "desc": "Premium Ceylon willow turf bats, built for turf wicket cricket.",
     "items": [
       {
-        "img": "assets/photo-1593766821405-f605e0f9535f.jpg",
+        "img": "assets/71OzDMXDn8L.jpg",
         "name": "Sri Lankan Turf Bat",
         "desc": "Premium Ceylon willow, turf wickets",
         "stock": true
       },
       {
-        "img": "assets/photo-1677785643764-179393bc3842.jpg",
+        "img": "assets/product-jpeg-500x500.webp",
         "name": "SL Turf Bat — Pro Grade",
         "desc": "Heavier profile for power hitters",
         "stock": true
       },
       {
-        "img": "assets/photo-1593766788306-28561086694e.jpg",
+        "img": "assets/71d5E8EJizL._AC_UF894,1000_QL80_.jpg",
         "name": "SL Turf Bat — Lightweight",
         "desc": "Quicker pick-up, junior to club level",
         "stock": true
