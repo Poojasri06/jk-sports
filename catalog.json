@@ -189,6 +189,12 @@
         "name": "Hockey Ball",
         "desc": "Hard plastic match ball",
         "stock": true
+      },
+      {
+        "img": "assets/hockey-shin-guards.jpg",
+        "name": "Hockey Shin Guards",
+        "desc": "Protective shin guards for hockey players",
+        "stock": true
       }
     ]
   },
@@ -213,6 +219,12 @@
         "img": "assets/photo-1612364741797-c3c1756afb91.jpg",
         "name": "Vibration Dampeners",
         "desc": "String vibration control",
+        "stock": true
+      },
+      {
+        "img": "assets/weighted-tennis-racket.jpg",
+        "name": "Weighted Training Racket",
+        "desc": "Extra-weight racket for strength & swing training",
         "stock": true
       }
     ]
@@ -270,12 +282,6 @@
         "name": "Pull-Up Bars",
         "desc": "Wall-mounted & doorway bars",
         "stock": true
-      },
-      {
-        "img": "assets/olek-buzunov-lru_Wt0xJtw-unsplash.jpg",
-        "name": "Custom Sports Medals",
-        "desc": "For schools, colleges & events",
-        "stock": true
       }
     ]
   },
@@ -289,7 +295,7 @@
         "name": "Yoga Mats",
         "desc": "Non-slip, multiple thicknesses",
         "stock": true
-      },
+      }
     ]
   },
   "athletics": {
@@ -341,17 +347,24 @@
       }
     ]
   },
-  "indoor": {
-    "title": "Indoor Games",
+  "chess": {
+    "title": "Chess",
     "tag": "INDOOR ZONE",
-    "desc": "Chess, carrom, and other indoor game sets.",
+    "desc": "Chess boards and sets for casual play, clubs and tournaments.",
     "items": [
       {
         "img": "assets/esma-q-MCC1g6Ziw-unsplash.jpg",
         "name": "Chess Sets",
         "desc": "Wooden & tournament boards",
         "stock": true
-      },
+      }
+    ]
+  },
+  "carrom": {
+    "title": "Carrom",
+    "tag": "INDOOR ZONE",
+    "desc": "Carrom boards, coins and accessories for home and club play.",
+    "items": [
       {
         "img": "assets/shamoil-REr7cehZGAY-unsplash.jpg",
         "name": "Carrom Boards",
@@ -376,60 +389,11 @@
         "name": "Swim Caps",
         "desc": "Silicone caps, all sizes",
         "stock": true
-      }
-    ]
-  },
-  "medals": {
-    "title": "Medals & Trophies",
-    "tag": "TROPHIES AVAILABLE",
-    "desc": "trophies for schools, colleges, tournaments, and events — engraving, ribbon, and sizing options included.",
-    "items": [
-      {
-        "img": "assets/george-pisarevsky-u-OIymmnw1s-unsplash.jpg",
-        "name": "Gold Medal",
-        "desc": "Gold-finish medal with ribbon, engraving available",
-        "stock": true
       },
       {
-        "img": "assets/george-pisarevsky--g7l2UlC2T4-unsplash.jpg",
-        "name": "Silver Medal",
-        "desc": "Silver-finish medal with ribbon, engraving available",
-        "stock": true
-      },
-      {
-        "img": "assets/george-pisarevsky-Giixpknf8Sg-unsplash.jpg",
-        "name": "Bronze Medal",
-        "desc": "Bronze-finish medal with ribbon, engraving available",
-        "stock": true
-      },
-      {
-        "img": "assets/giorgio-trovato-_XTY6lD8jgM-unsplash.jpg",
-        "name": "Trophy — 1 ft",
-        "desc": "Compact trophy, ideal for runner-up & participation awards",
-        "stock": true
-      },
-      {
-        "img": "assets/marek-studzinski-g6w7SJZNbUc-unsplash.jpg",
-        "name": "Trophy — 1.5 ft",
-        "desc": "Mid-size trophy, popular for school & club events",
-        "stock": true
-      },
-      {
-        "img": "assets/ezequiel-garrido-E_OVdx3dbnU-unsplash.jpg",
-        "name": "Trophy — 2 ft",
-        "desc": "Large trophy, ideal for tournament champions",
-        "stock": true
-      },
-      {
-        "img": "assets/xavier-praillet-qk8R17BT5FY-unsplash.jpg",
-        "name": "Trophy — 3 ft",
-        "desc": "Premium grand trophy for finals & main events",
-        "stock": true
-      },
-      {
-        "img": "assets/tim-mossholder-tAGk5-IbMK0-unsplash.jpg",
-        "name": "Winner Shields",
-        "desc": "Wooden & acrylic shield plaques",
+        "img": "assets/swimming-jacket.jpg",
+        "name": "Swimming Jackets",
+        "desc": "Buoyancy & thermal swim jackets, all sizes",
         "stock": true
       }
     ]
@@ -560,6 +524,12 @@
         "img": "assets/product-jpeg-500x500 (1).webp",
         "name": "Air Pumps",
         "desc": "Ball and tube air pumps with needles",
+        "stock": true
+      },
+      {
+        "img": "assets/arm-bands.jpg",
+        "name": "Arm Bands",
+        "desc": "Elastic arm bands for training and everyday wear",
         "stock": true
       }
     ]
