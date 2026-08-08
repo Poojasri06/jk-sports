@@ -117,6 +117,10 @@ window.getRecommendation = getRecommendation;
    Each sport/category maps to a LIST of related products.
    Clicking any sport image opens a catalog showing every
    product available for that sport — not just one item.
+
+   NOTE: Chess and Carrom used to both point at a shared 'indoor'
+   catalog entry, so clicking either card opened the same modal.
+   They now have their own dedicated 'chess' and 'carrom' entries.
 */
 var CATALOG = {
   cricket: {
@@ -189,7 +193,8 @@ var CATALOG = {
     desc:  'Sticks, balls, and protective gear for hockey players.',
     items: [
       { img: 'https://images.unsplash.com/photo-1548865379-3a7ddf7abe01?w=400&auto=format&fit=crop', name: 'Hockey Stick', desc: 'Composite & wooden sticks', stock: true },
-      { img: 'https://images.unsplash.com/photo-1515703407324-5f753afd8be8?w=400&auto=format&fit=crop', name: 'Hockey Ball', desc: 'Hard plastic match ball', stock: true }
+      { img: 'https://images.unsplash.com/photo-1515703407324-5f753afd8be8?w=400&auto=format&fit=crop', name: 'Hockey Ball', desc: 'Hard plastic match ball', stock: true },
+      { img: 'assets/hockey-shin-guards.jpg', name: 'Hockey Shin Guards', desc: 'Protective shin guards for hockey players', stock: true }
     ]
   },
   tennis: {
@@ -199,7 +204,8 @@ var CATALOG = {
     items: [
       { img: 'https://images.unsplash.com/photo-1551773188-0801da12ddae?w=400&auto=format&fit=crop', name: 'Graphite Tennis Racket', desc: 'Beginner to pro-staff series', stock: true },
       { img: 'https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?w=400&auto=format&fit=crop', name: 'Pressureless Tennis Balls', desc: 'Practice & match cans', stock: true },
-      { img: 'https://images.unsplash.com/photo-1612364741797-c3c1756afb91?w=400&auto=format&fit=crop', name: 'Vibration Dampeners', desc: 'String vibration control', stock: true }
+      { img: 'https://images.unsplash.com/photo-1612364741797-c3c1756afb91?w=400&auto=format&fit=crop', name: 'Vibration Dampeners', desc: 'String vibration control', stock: true },
+      { img: 'assets/weighted-tennis-racket.jpg', name: 'Weighted Training Racket', desc: 'Extra-weight racket for strength & swing training', stock: true }
     ]
   },
   tabletennis: {
@@ -220,8 +226,7 @@ var CATALOG = {
       { img: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&auto=format&fit=crop', name: 'Barbells & Weight Plates', desc: 'Olympic & standard bars', stock: true },
       { img: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d45?w=400&auto=format&fit=crop', name: 'Resistance Bands', desc: 'Multiple resistance levels', stock: true },
       { img: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=400&auto=format&fit=crop', name: 'Gym Benches', desc: 'Flat & adjustable incline benches', stock: true },
-      { img: 'https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=400&auto=format&fit=crop', name: 'Pull-Up Bars', desc: 'Wall-mounted & doorway bars', stock: true },
-      { img: 'https://images.unsplash.com/photo-1461280360983-bd93eaa5051b?w=400&auto=format&fit=crop', name: 'Custom Sports Medals', desc: 'For schools, colleges & events', stock: true }
+      { img: 'https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=400&auto=format&fit=crop', name: 'Pull-Up Bars', desc: 'Wall-mounted & doorway bars', stock: true }
     ]
   },
   yoga: {
@@ -248,13 +253,24 @@ var CATALOG = {
       { img: 'https://images.unsplash.com/photo-1776705865346-3f32edc23b60?w=400&auto=format&fit=crop', name: 'Long & High Jump Gear', desc: 'Measuring tapes, landing mats & crossbars', stock: true }
     ]
   },
-  indoor: {
-    title: 'Indoor Games',
+  chess: {
+    title: 'Chess',
     tag:   'INDOOR ZONE',
-    desc:  'Chess, carrom, and other indoor game sets.',
+    desc:  'Chess boards and sets for casual play, clubs and tournaments.',
     items: [
-      { img: 'https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=400&auto=format&fit=crop', name: 'Chess Sets', desc: 'Wooden & tournament boards', stock: true },
-      { img: 'https://images.unsplash.com/photo-1611996575749-79a3a250f948?w=400&auto=format&fit=crop', name: 'Carrom Boards', desc: 'Standard size with coins & striker', stock: true }
+      { img: 'https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=400&auto=format&fit=crop', name: 'Wooden Chess Set', desc: 'Classic wooden board with weighted pieces', stock: true },
+      { img: 'https://images.unsplash.com/photo-1585856262121-33f7c37eb2c3?w=400&auto=format&fit=crop', name: 'Tournament Chess Set', desc: 'Vinyl roll-up board, tournament-standard pieces', stock: true },
+      { img: 'https://images.unsplash.com/photo-1560174038-da43ac74f01b?w=400&auto=format&fit=crop', name: 'Chess Clock', desc: 'Digital & analog timers for competitive play', stock: true }
+    ]
+  },
+  carrom: {
+    title: 'Carrom',
+    tag:   'INDOOR ZONE',
+    desc:  'Carrom boards, coins and accessories for home and club play.',
+    items: [
+      { img: 'https://images.unsplash.com/photo-1611996575749-79a3a250f948?w=400&auto=format&fit=crop', name: 'Standard Carrom Board', desc: 'Full-size board with coins & striker', stock: true },
+      { img: 'https://images.unsplash.com/photo-1590490350977-a5b6f1f1a1b6?w=400&auto=format&fit=crop', name: 'Tournament Carrom Board', desc: 'Championship-grade board, smooth finish', stock: true },
+      { img: 'https://images.unsplash.com/photo-1622037022824-0c71d511ee3c?w=400&auto=format&fit=crop', name: 'Carrom Powder & Coins', desc: 'Boric powder, coin & striker refill sets', stock: true }
     ]
   },
   swimming: {
@@ -263,22 +279,8 @@ var CATALOG = {
     desc:  'Goggles, caps and accessories for swimmers.',
     items: [
       { img: 'https://images.unsplash.com/photo-1560090995-01632a28895b?w=400&auto=format&fit=crop', name: 'Swimming Goggles', desc: 'Anti-fog, UV protection', stock: true },
-      { img: 'https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=400&auto=format&fit=crop', name: 'Swim Caps', desc: 'Silicone caps, all sizes', stock: true }
-    ]
-  },
-  medals: {
-    title: 'Medals & Trophies',
-    tag:   'CUSTOM MEDALS & TROPHIES AVAILABLE',
-    desc:  'Medals and trophies for schools, colleges, tournaments, and events — engraving, ribbon, and sizing options included.',
-    items: [
-      { img: 'https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=400&auto=format&fit=crop', name: 'Gold Medal', desc: 'Gold-finish medal with ribbon, engraving available', stock: true },
-      { img: 'https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?w=400&auto=format&fit=crop', name: 'Silver Medal', desc: 'Silver-finish medal with ribbon, engraving available', stock: true },
-      { img: 'https://images.unsplash.com/photo-1533560904424-a0c61dc306fc?w=400&auto=format&fit=crop', name: 'Bronze Medal', desc: 'Bronze-finish medal with ribbon, engraving available', stock: true },
-      { img: 'https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=400&auto=format&fit=crop', name: 'Trophy — 1 ft', desc: 'Compact trophy, ideal for runner-up & participation awards', stock: true },
-      { img: 'https://images.unsplash.com/photo-1607344645866-009c320b63eb?w=400&auto=format&fit=crop', name: 'Trophy — 1.5 ft', desc: 'Mid-size trophy, popular for school & club events', stock: true },
-      { img: 'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=400&auto=format&fit=crop', name: 'Trophy — 2 ft', desc: 'Large trophy, ideal for tournament champions', stock: true },
-      { img: 'https://images.unsplash.com/photo-1571019613576-2b22c76fd955?w=400&auto=format&fit=crop', name: 'Trophy — 3 ft', desc: 'Premium grand trophy for finals & main events', stock: true },
-      { img: 'https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400&auto=format&fit=crop', name: 'Winner Shields', desc: 'Wooden & acrylic shield plaques', stock: true }
+      { img: 'https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=400&auto=format&fit=crop', name: 'Swim Caps', desc: 'Silicone caps, all sizes', stock: true },
+      { img: 'assets/swimming-jacket.jpg', name: 'Swimming Jackets', desc: 'Buoyancy & thermal swim jackets, all sizes', stock: true }
     ]
   },
   boxing: {
@@ -323,7 +325,8 @@ var CATALOG = {
       { img: 'assets/brett-wharton-ZgwoBY6CwGI-unsplash.jpg', name: 'Head Bands', desc: 'Non-slip head bands for everyday training', stock: true },
       { img: 'assets/andriyko-podilnyk-sGRJ36ogml8-unsplash.jpg', name: 'Sports Bags', desc: 'Durable kit bags for gear and equipment', stock: true },
       { img: 'assets/joan-tran-reEySFadyJQ-unsplash.jpg', name: 'Water Bottles', desc: 'Sports water bottles, multiple sizes', stock: true },
-      { img: 'assets/anton-savinov-Q5t8eNYgDsA-unsplash.jpg', name: 'Air Pumps', desc: 'Ball and tube air pumps with needles', stock: true }
+      { img: 'assets/anton-savinov-Q5t8eNYgDsA-unsplash.jpg', name: 'Air Pumps', desc: 'Ball and tube air pumps with needles', stock: true },
+      { img: 'assets/arm-bands.jpg', name: 'Arm Bands', desc: 'Elastic arm bands for training and everyday wear', stock: true }
     ]
   }
 };
@@ -423,7 +426,7 @@ if (catalogImageIssues.length && typeof console !== 'undefined' && console.warn)
   console.warn('JK Sports catalog image issues detected', catalogImageIssues);
 }
 
-var CATALOG_SOURCE_URL = 'catalog.json?v=20260703';
+var CATALOG_SOURCE_URL = 'catalog.json?v=20260708';
 
 function refreshCatalogIssues() {
   catalogImageIssues = scanCatalogImageIssues(CATALOG);
