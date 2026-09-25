@@ -1,0 +1,45 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── Admin allowlist ──
+    // Single source of truth, shared with functions/index.js: the doc
+    // config/admins { emails: [...] }. Edit that one doc (Firebase Console
+    // -> Firestore -> config -> admins) to add/remove admins -- nothing to
+    // keep in sync elsewhere.
+    function isAdmin() {
+      return request.auth != null &&
+        request.auth.token.email in
+          get(/databases/$(database)/documents/config/admins).data.emails;
+    }
+
+    // Only admins can ever read the admin allowlist itself; nobody can
+    // write it from the client (manage it via the Console).
+    match /config/{docId} {
+      allow read: if isAdmin();
+      allow write: if false;
+    }
+
+    // Products: anyone can read active products (storefront). Admins can
+    // read everything and edit price/stock/active directly from the
+    // admin dashboard -- these are simple field edits, not the
+    // stock-reservation logic (that only happens inside the
+    // createOrder/updateOrderStatus Cloud Functions).
+    match /products/{productId} {
+      allow read: if resource.data.active == true || isAdmin();
+      allow write: if isAdmin();
+    }
+
+    // Orders: NEVER writable directly by clients, including admins.
+    // Creation happens in createOrder (reserves stock transactionally),
+    // payment confirmation in verifyPayment, and status changes
+    // (packed/shipped/delivered/cancelled + restocking) in
+    // updateOrderStatus -- all three run with the Admin SDK and bypass
+    // these rules entirely. Admins can only READ orders here.
+    match /orders/{orderId} {
+      allow read: if isAdmin();
+      allow write: if false;
+    }
+  }
+}

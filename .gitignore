@@ -1,0 +1,12 @@
+node_modules/
+functions/node_modules/
+scripts/node_modules/
+
+serviceAccountKey.json
+scripts/serviceAccountKey.json
+.env
+.env.*
+!.env.example
+
+firebase-debug.log
+.firebase/

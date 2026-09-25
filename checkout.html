@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | JK Sports Namakkal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;800;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body style="background:var(--light-bg);">
+
+<header>
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo.jpg" alt="JK Sports" class="nav-logo-img" width="40" height="40" />
+      <span class="nav-brand">JK Sports</span>
+    </a>
+    <div class="nav-links"><a href="index.html">&larr; Back to Store</a></div>
+  </nav>
+</header>
+
+<div class="checkout-wrap">
+  <div class="checkout-card">
+    <h2>Delivery Details</h2>
+    <form id="checkoutForm">
+      <div class="checkout-field">
+        <label for="custName">Full Name</label>
+        <input type="text" id="custName" required />
+      </div>
+      <div class="checkout-field">
+        <label for="custPhone">Phone Number</label>
+        <input type="tel" id="custPhone" pattern="[0-9]{10}" placeholder="10-digit mobile number" required />
+      </div>
+      <div class="checkout-field">
+        <label for="custEmail">Email</label>
+        <input type="email" id="custEmail" required />
+      </div>
+      <div class="checkout-field">
+        <label for="custAddress">Address</label>
+        <textarea id="custAddress" rows="2" required></textarea>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;">
+        <div class="checkout-field">
+          <label for="custCity">City</label>
+          <input type="text" id="custCity" required />
+        </div>
+        <div class="checkout-field">
+          <label for="custState">State</label>
+          <input type="text" id="custState" required />
+        </div>
+      </div>
+      <div class="checkout-field">
+        <label for="custPincode">Pincode</label>
+        <input type="text" id="custPincode" pattern="[0-9]{6}" required />
+      </div>
+
+      <div class="checkout-field">
+        <label>Payment Method</label>
+        <div style="display:flex;gap:1rem;margin-top:0.4rem;">
+          <label style="display:flex;align-items:center;gap:0.4rem;font-weight:600;">
+            <input type="radio" name="paymentMethod" value="razorpay" checked /> UPI / Card / Net Banking
+          </label>
+          <label style="display:flex;align-items:center;gap:0.4rem;font-weight:600;">
+            <input type="radio" name="paymentMethod" value="cod" /> Cash on Delivery
+          </label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-pay" id="payBtn">Pay Now</button>
+      <p class="checkout-error" id="checkoutError"></p>
+    </form>
+  </div>
+
+  <div class="checkout-card">
+    <h2>Order Summary</h2>
+    <div id="summaryLines"></div>
+    <div class="checkout-summary-total">
+      <span>Total</span>
+      <span id="summaryTotal">₹0</span>
+    </div>
+  </div>
+</div>
+
+<script src="js/cart.js"></script>
+<script type="module">
+  import { functionsClient } from './js/firebase-config.js';
+  import { httpsCallable } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-functions.js";
+
+  var cart = getCart();
+  var summaryLines = document.getElementById('summaryLines');
+  var summaryTotal = document.getElementById('summaryTotal');
+  var errorEl = document.getElementById('checkoutError');
+  var payBtn = document.getElementById('payBtn');
+
+  function renderSummary() {
+    if (cart.length === 0) {
+      summaryLines.innerHTML = '<p style="color:var(--text-dim);">Your cart is empty. <a href="index.html">Go back to shop</a>.</p>';
+      payBtn.disabled = true;
+      return;
+    }
+    summaryLines.innerHTML = cart.map(function (i) {
+      return '<div class="checkout-summary-line"><span>' + i.name + ' &times; ' + i.qty + '</span><span>' + formatINR(i.price * i.qty) + '</span></div>';
+    }).join('');
+    summaryTotal.textContent = formatINR(cartTotal());
+  }
+  renderSummary();
+
+  function updatePayButtonLabel() {
+    var method = document.querySelector('input[name="paymentMethod"]:checked').value;
+    payBtn.textContent = method === 'cod' ? 'Place Order (Pay on Delivery)' : 'Pay Now';
+  }
+  document.querySelectorAll('input[name="paymentMethod"]').forEach(function (r) {
+    r.addEventListener('change', updatePayButtonLabel);
+  });
+  updatePayButtonLabel();
+
+  document.getElementById('checkoutForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    errorEl.textContent = '';
+    if (cart.length === 0) return;
+
+    var paymentMethod = document.querySelector('input[name="paymentMethod"]:checked').value;
+    var customer = {
+      name: document.getElementById('custName').value.trim(),
+      phone: document.getElementById('custPhone').value.trim(),
+      email: document.getElementById('custEmail').value.trim(),
+      address: document.getElementById('custAddress').value.trim(),
+      city: document.getElementById('custCity').value.trim(),
+      state: document.getElementById('custState').value.trim(),
+      pincode: document.getElementById('custPincode').value.trim()
+    };
+
+    payBtn.disabled = true;
+    payBtn.textContent = paymentMethod === 'cod' ? 'Placing order…' : 'Preparing payment…';
+
+    try {
+      var createOrder = httpsCallable(functionsClient, 'createOrder');
+      var itemsPayload = cart.map(function (i) { return { productId: i.id, qty: i.qty }; });
+      var result = await createOrder({ items: itemsPayload, customer: customer, paymentMethod: paymentMethod });
+      var data = result.data;
+
+      if (data.paymentMethod === 'cod') {
+        // Stock is already reserved and the order is already confirmed
+        // server-side — nothing more to do here.
+        clearCart();
+        window.location.href = 'order-success.html?orderId=' + data.firestoreOrderId + '&cod=1';
+        return;
+      }
+
+      var rzp = new Razorpay({
+        key: data.keyId,
+        amount: data.amount,
+        currency: data.currency,
+        name: 'JK Sports Namakkal',
+        description: 'Order #' + data.firestoreOrderId,
+        order_id: data.razorpayOrderId,
+        prefill: { name: customer.name, email: customer.email, contact: customer.phone },
+        theme: { color: '#0066ff' },
+        handler: async function (response) {
+          payBtn.textContent = 'Verifying payment…';
+          try {
+            var verifyPayment = httpsCallable(functionsClient, 'verifyPayment');
+            await verifyPayment({
+              firestoreOrderId: data.firestoreOrderId,
+              razorpay_order_id: response.razorpay_order_id,
+              razorpay_payment_id: response.razorpay_payment_id,
+              razorpay_signature: response.razorpay_signature
+            });
+            clearCart();
+            window.location.href = 'order-success.html?orderId=' + data.firestoreOrderId;
+          } catch (verifyErr) {
+            errorEl.textContent = 'Payment received but verification failed. Please contact us with your payment ID: ' + response.razorpay_payment_id;
+            payBtn.disabled = false;
+            updatePayButtonLabel();
+          }
+        },
+        modal: {
+          ondismiss: function () {
+            // Note: stock stays reserved on this order until either the
+            // customer pays, or releaseAbandonedOrders (a scheduled
+            // Cloud Function) auto-cancels + restocks it after 20 minutes.
+            payBtn.disabled = false;
+            updatePayButtonLabel();
+          }
+        }
+      });
+      rzp.open();
+    } catch (err) {
+      errorEl.textContent = 'Could not complete order: ' + (err.message || err);
+      payBtn.disabled = false;
+      updatePayButtonLabel();
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin | JK Sports Namakkal</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;800;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body style="background:var(--light-bg);">
+
+<header>
+  <nav>
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/logo.jpg" alt="JK Sports" class="nav-logo-img" width="40" height="40" />
+      <span class="nav-brand">JK Sports Admin</span>
+    </a>
+    <div class="nav-links" id="adminNavLinks" style="display:none;">
+      <button type="button" id="logoutBtn" style="background:none;border:none;font:inherit;cursor:pointer;color:var(--text-main);">Log Out</button>
+    </div>
+  </nav>
+</header>
+
+<!-- LOGIN -->
+<div class="admin-login-box" id="loginBox">
+  <h2 style="font-family:var(--font-head);margin-bottom:1rem;">Admin Login</h2>
+  <div class="checkout-field">
+    <label for="loginEmail">Email</label>
+    <input type="email" id="loginEmail" />
+  </div>
+  <div class="checkout-field">
+    <label for="loginPassword">Password</label>
+    <input type="password" id="loginPassword" />
+  </div>
+  <button type="button" id="loginBtn" class="btn-pay">Log In</button>
+  <p class="checkout-error" id="loginError"></p>
+</div>
+
+<!-- DASHBOARD -->
+<div class="admin-wrap" id="dashboard" style="display:none;">
+  <div class="admin-tabs">
+    <button type="button" class="admin-tab active" data-tab="products">Products</button>
+    <button type="button" class="admin-tab" data-tab="orders">Orders</button>
+  </div>
+
+  <div id="tabProducts">
+    <h2 style="font-family:var(--font-head);margin-bottom:1rem;">Products</h2>
+    <div style="overflow-x:auto;">
+      <table class="admin-table">
+        <thead>
+          <tr><th>Name</th><th>Category</th><th>Price (₹)</th><th>Stock</th><th>Active</th><th></th></tr>
+        </thead>
+        <tbody id="productsTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="tabOrders" style="display:none;">
+    <h2 style="font-family:var(--font-head);margin:1.5rem 0 1rem;">Orders</h2>
+    <div style="overflow-x:auto;">
+      <table class="admin-table">
+        <thead>
+          <tr><th>Order ID</th><th>Customer</th><th>Phone</th><th>Amount</th><th>Payment</th><th>Status</th><th>Placed</th><th></th></tr>
+        </thead>
+        <tbody id="ordersTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="admin.js"></script>
+</body>
+</html>

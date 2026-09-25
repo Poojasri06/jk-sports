@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Confirmed | JK Sports Namakkal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;800;900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body style="background:var(--light-bg);">
+<header>
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo.jpg" alt="JK Sports" class="nav-logo-img" width="40" height="40" />
+      <span class="nav-brand">JK Sports</span>
+    </a>
+  </nav>
+</header>
+
+<div style="max-width:600px;margin:8rem auto;padding:2rem;text-align:center;">
+  <h1 style="font-family:var(--font-head);font-size:2.5rem;">✅ Order Confirmed!</h1>
+  <p style="color:var(--text-dim);margin:1rem 0;">Thank you for shopping with JK Sports Namakkal. Your order reference is:</p>
+  <p id="orderIdDisplay" style="font-family:var(--font-head);font-size:1.5rem;font-weight:800;"></p>
+  <p id="codNote" style="display:none;color:var(--text-dim);margin-top:0.5rem;">Pay in cash when your order is delivered.</p>
+  <p style="color:var(--text-dim);margin-top:1rem;">We'll contact you shortly to confirm delivery. For urgent queries, call us at
+    <a href="tel:+919786722444">+91 97867 22444</a> or message us on
+    <a href="https://wa.me/919786722444" target="_blank" rel="noopener">WhatsApp</a>.
+  </p>
+  <a href="index.html" class="btn-jersey" style="background:var(--primary);color:white;display:inline-block;margin-top:1.5rem;">Continue Shopping →</a>
+</div>
+
+<script>
+  var params = new URLSearchParams(window.location.search);
+  var orderId = params.get('orderId');
+  document.getElementById('orderIdDisplay').textContent = orderId ? '#' + orderId : '';
+  if (params.get('cod') === '1') {
+    document.getElementById('codNote').style.display = 'block';
+  }
+</script>
+</body>
+</html>
